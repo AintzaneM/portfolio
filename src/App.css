@@ -1,17 +1,19 @@
 body {
   margin: 0;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white;
+  min-height: 100vh;
 
 }
 
 /*NAVBAR*/
 
 .navbar{
-  background-color: #92e6a7;
+  background-color: #1b4332;
 
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -30,7 +32,7 @@ li{
 
 li a {
   margin: 0 1rem;
-  color: white;
+  color:#74c69d;
   padding: 0.5rem 1.5rem;
   /* border: 1px solid white; */
   /* border-radius: 2rem; */
@@ -43,6 +45,65 @@ li a:hover {
     inset 0 0 10px 2px white;
 }
 
+/* HOME */
+.hi-there {
+  font-family: 'Courier New', Courier, monospace;
+}
+.name {
+  font-size: 40px;
+}
+
+/* .profession{
+  color: #74c69d;
+} */
+.presentation p {
+  color: white;
+}
+
+.presentation h1, h3 {
+  color: #74c69d ;
+}
+
+.btn-cv{
+  background: #1b4332;
+  border-radius: 12px;
+  border-color: #74c69d ;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 16px;
+  /* text-transform: uppercase; */
+  transition: 0.3s ease background;
+  min-width: 10%;
+}
+
+.btn-cv a{
+  color:white;
+  text-decoration: none;
+}
+
+button:hover {
+  background: #74c69d ;
+  color: #fff;
+  transition: 0.3s ease background;
+}
+
+.presentation {
+  
+  background-color: #1b4332;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px 5px #74c69d;
+  line-height: 25px;
+  text-align: justify;
+  margin:3rem;
+  margin-top: 8rem;
+  max-width:30%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start ;
+  
+}
 
 
 
