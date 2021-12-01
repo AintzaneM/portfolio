@@ -17,17 +17,22 @@ export const useStage = (player, resetPlayer) => {
                         newStage[y + player.position.y][x + player.position.x] = [
                             value,
                             `${player.collided ? "merged" : "clear"}`,
-                        ]
+                        ];
                     }
-                })
-            })
+                });
+            });
+
+            //check if we collided
+            if(player.collided) {
+                resetPlayer();
+            }
             return newStage;
         }
         setStage(prevState => updateStage(prevState))
 
         //dependencies
 
-    }, [player])
+    }, [player, resetPlayer])
 
     return [stage, setStage];
 }

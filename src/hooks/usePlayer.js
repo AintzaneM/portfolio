@@ -20,12 +20,12 @@ export const usePlayer = () => {
     const resetPlayer = useCallback(() => {
 
         setPlayer({
-            position: {x: STAGE_WIDTH / 2-2, y: 0},
+            position: {x: STAGE_WIDTH / 2 -2, y: 0},
             tetromino: randomTetromino().shape,
             collided: false,
         })
     }, [])
     return [player, updatePlayerPosition, resetPlayer]
 
-    return [player];
+  
 }
