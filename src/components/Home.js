@@ -1,6 +1,4 @@
-document.addEventListener('DomContentLoaded', () => {
-    
-})
+// document.addEventListener('DomContentLoaded', () => {})
 import React from "react";
 
 function Home() {
