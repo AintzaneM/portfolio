@@ -6,6 +6,8 @@ import {projects as Projects} from './components/Projects'
 import Navbar from './components/Navbar';
 import ProjectDetails from './components/ProjectDetails';
 import Contact from './components/Contact';
+import Tetris from './components/Tetris';
+import Cell from './components/Cell'
 
 class App extends React.Component {
   render() {
@@ -13,8 +15,19 @@ class App extends React.Component {
       <div className="App">
         <Navbar/>
         
+        
         <Switch>
-          <Route exact path ='/' component={Home}/>
+        
+
+          <Route exact path ='/'>  
+            
+            <Home/>
+            <Tetris/>
+            
+            {/* <Cell></Cell> */}
+          </Route>
+          
+          {/* <Route exact path ='/' component={Tetris}/> */}
           <Route exact path='/projects' component={Projects}/>
           <Route exact path='/projects/:id' component={ProjectDetails}/>
           <Route exact path='/contact' component={Contact}/>
