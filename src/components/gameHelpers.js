@@ -9,7 +9,7 @@ export const createStage = () =>
 //looping tetromino
 export const checkCollision = (player, stage, {x:moveX, y:moveY}) => {
     for(let y = 0; y < player.tetromino.length; y +=1) {
-        for (let x = 0; x< player.tetromino[y].length; x +=1) {
+        for (let x = 0; x < player.tetromino[y].length; x +=1) {
 
             //check if player is on tetrom.cell
             //movement inside of the game area height (y). 

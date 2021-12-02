@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { createStage, checkCollision } from './gameHelpers';
-
+//components
 import Stage from './Stage';
 import Display from './Display';
 import StartButton from './StartButton';
@@ -18,14 +18,14 @@ const Tetris = () => {
     const [dropTime, setDropTime] = useState(null);
     const [gameOver, setGameOver] = useState(false);
 
-    const [player, updatePlayerPosition, resetPlayer ] = usePlayer();
-    const [stage, setStage] = useStage(player);
+    const [player, updatePlayerPosition, resetPlayer, playerRotate ] = usePlayer();
+    const [stage, setStage] = useStage(player, resetPlayer);
 
     console.log("re-render");
 
     const movePlayer = direction => {
-        if(!checkCollision(player, stage, {x: direction, y: 0 })){
-            updatePlayerPosition({x:direction, y: 0})
+        if(!checkCollision(player, stage, {x: direction, y: 0 })) {
+            updatePlayerPosition({x: direction, y: 0})
         }
         
     }
@@ -41,7 +41,7 @@ const Tetris = () => {
     }
 
     const drop = () => {
-        if(!checkCollision(player, stage, {x: 0, y: 1 })){
+        if(!checkCollision(player, stage, {x: 0, y: 1 })) {
             updatePlayerPosition({x:0 , y: 1 , collided: false})
 
         }else {
@@ -79,6 +79,8 @@ const Tetris = () => {
              //down arrow  
             } else if (keyCode === 40) {
                 dropPlayer()
+            } else if (keyCode === 38) {
+                playerRotate(stage, 1)
             }
         }
     }
