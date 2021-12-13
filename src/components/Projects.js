@@ -25,6 +25,14 @@ export const myProjects = [
         year: 2021,
         technologies_tools: "React, Express, Moongose, REST API, JavaScript, HTML, CSS, Authorization and Authentication",
         type: "MERN Stack application",
+    },
+    {
+        id: "1d",
+        name: "Tetris",
+        img:"",
+        year: 2021,
+        technologies_tools: "React, JavaScript, HTML, CSS, Styled-Components, React Hooks",
+        type: "Computer project",
     }
 ]
 
