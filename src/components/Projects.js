@@ -5,7 +5,7 @@ export const myProjects = [
         id: "1a",
         name: "Who invent what?",
         about:"",
-        img:"",
+        img:"./tic-tac1.png",
         year: 2021,
         technologies_tools: "JavaScript, HTML, CSS, DOM Manipulation",
         type: "Game project",
@@ -16,7 +16,7 @@ export const myProjects = [
         id: "1b",
         name: "Tetris",
         about:"",
-        img:"",
+        img:"./tetris1.png",
         year: 2021,
         technologies_tools: "React, JavaScript, HTML, CSS, Styled-Components, React Hooks",
         type: "Computer project",
@@ -27,7 +27,7 @@ export const myProjects = [
         id: "1c",
         name: "AboutSkills",
         about:"",
-        img:"",
+        img:"./aboutSkills1.png",
         year: 2021,
         technologies_tools: "React, Express, Moongose, REST API, JavaScript, HTML, CSS, Authorization and Authentication",
         type: "MERN Stack application",
@@ -38,7 +38,7 @@ export const myProjects = [
         id: "1d",
         name: "SurfOn",
         about:"",
-        img:"",
+        img:"./surfOn1.png",
         year: 2021,
         technologies_tools: "Express, Moongose, JavaScript, HTML, CSS, Authorization and Authentication",
         type: "Full Stack application",
@@ -60,7 +60,7 @@ export const projects = () => {
                         {/* {console.log(eachProject.id)} */}
                             <Link to={`/projects/${eachProject.id}`}>{eachProject.name}</Link>
                         </p>
-                        {/* <img>{eachProject.img}</img> */}
+                        <img src={eachProject.img}></img>
                         <p><strong>About: </strong> <br/>{eachProject.about}</p>
                         <p><strong>Built with: </strong> <br/>{eachProject.technologies_tools}</p>
                         <p><strong>Deployment: </strong> <br/>{eachProject.deployment}</p>
