@@ -38,12 +38,12 @@ export const myProjects = [
 
 export const projects = () => {
     return (
-        <div>
+        <div className="container-projects">
             <p>My Projects:</p>
             {myProjects.map((eachProject, index) => {
                 return (
                     
-                    <div key={eachProject.id}>
+                    <div className="item-projects" key={eachProject.id}>
                         <p>
                         {/* {console.log(eachProject.id)} */}
                             <Link to={`/projects/${eachProject.id}`}>{eachProject.name}</Link>
