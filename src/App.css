@@ -126,19 +126,32 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .item-projects{
-  background: violet;
+  background: white;
   width: 40rem;
-  height: 20rem;
+  border: 2px solid tomato;
+  /* height: 20rem; */
+  box-shadow: 5px tomato;
   margin: 3rem;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   align-content: center;
-
 }
 
+.item-projects p{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.item-projects img{
+  width: 700px;  
+  height: 350px;
+
+}
