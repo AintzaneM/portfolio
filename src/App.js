@@ -6,6 +6,7 @@ import {projects as Projects} from './components/Projects'
 import Navbar from './components/Navbar';
 import ProjectDetails from './components/ProjectDetails';
 import Contact from './components/Contact';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 

@@ -3,23 +3,31 @@ body {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: white;
   min-height: 100vh;
+  /* background-color: blue ; */
 
 }
 
 /*NAVBAR*/
 
-.navbar{
+.navbar-container{
   background-color: white;
-
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  align-items: center;
+  
+  
+  
 }
 
 ul{
   display: flex;
   flex-direction: row;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  
 }
 
 li{
@@ -47,9 +55,11 @@ li{
 .lnk-home a:hover, .lnk-contact:hover , .lnk-projects :hover{
   background-color: #74c69d ;
   transition: 0.3s ease background;
-  
+  color: #1b4332;
+    
 }
-.lnk-contact a {
+.lnk-contact a, .btn-projects a {
+  /* background: #1b4332; */
   border-radius: 12px;
   border-color: #74c69d ;
   cursor: pointer;
@@ -60,6 +70,8 @@ li{
   min-width: 10%;
   color:white;
   text-decoration: none;
+  min-width: 20%;
+  font-size: 14px;
 }
 
 /* HOME */
@@ -89,7 +101,7 @@ li{
   display: inline-block;
   font-size: 14px;
   padding: 8px 16px;
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
   transition: 0.3s ease background;
   min-width: 10%;
 }
@@ -99,10 +111,11 @@ li{
   text-decoration: none;
 }
 
-button:hover {
+button:hover , .lnk-contact a:hover{
   background: #74c69d ;
   color: #fff;
   transition: 0.3s ease background;
+  
 }
 
 .presentation {
@@ -129,18 +142,8 @@ button:hover {
 }
 
 .item-projects{
-  background: white;
-  width: 40rem;
-  border: 2px solid tomato;
-  /* height: 20rem; */
-  box-shadow: 5px tomato;
   margin: 3rem;
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+  
 }
 
 .item-projects p{
@@ -148,10 +151,31 @@ button:hover {
   flex-direction: column;
   align-items: center;
   text-align: center;
+} 
+
+.btn-projects  {
+  background: #1b4332;
+  border-radius: 12px;
+  border-color: #74c69d ;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 16px;
+  transition: 0.3s ease background;
+  min-width: 50%;
 }
 
-.item-projects img{
-  width: 700px;  
-  height: 350px;
-
+.card-body{
+  text-align: center;
+  background-color: #FEFBF3; 
 }
+
+.card {
+  box-shadow: #74c69d  0px 5px 25px;
+  background-color: #FEFBF3 ;
+  border-radius: 50px;
+}
+
+
+
+
