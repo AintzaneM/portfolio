@@ -53,13 +53,15 @@ export const myProjects = [
 
 export const projects = () => {
     return (
+        <>
+        
         <div className="container-projects">
-            <p>My Projects:</p>
+        <p className="title-projects"><strong>Projects</strong></p>
             {myProjects.map((eachProject, index) => {
                 return (
                     <div className="item-projects" key={eachProject.id}>
                         
-                        <Card className="" style={{ width: '30rem' }}>
+                        <Card className="card" style={{ width: '30rem' }}>
                             <Card.Img className="card-body-img" variant="top" src={eachProject.img}/>
                             <Card.Body className="card-body">
                                 <Card.Title><Link to={`/projects/${eachProject.id}`}>{eachProject.name}</Link></Card.Title>
@@ -89,6 +91,7 @@ export const projects = () => {
                 )
             })}
         </div>
+        </>
     )
 }
 
