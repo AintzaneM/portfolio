@@ -134,7 +134,7 @@ button:hover , .lnk-contact a:hover{
 }
 
 /* PROJECTS */
-.container-projects {
+.container-projects, .container-contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -176,7 +176,7 @@ button:hover , .lnk-contact a:hover{
   border-radius: 50px;
 }
 
-.title-projects{
+.title-projects, .title-contact{
   margin:3rem;
   font-size: 40px;
   color: #1b4332;
