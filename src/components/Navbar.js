@@ -12,7 +12,7 @@ function NavBar () {
                     <Link to='/projects'><strong>Projects</strong></Link>
                 </li>
                 <li className="lnk-contact">
-                    <Link to='/contact'>Contact</Link>
+                    <Link to='/contact'><strong>Contact</strong></Link>
                 </li>
             </ul>
         </div>

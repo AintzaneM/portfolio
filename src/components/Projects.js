@@ -68,7 +68,7 @@ export const projects = () => {
                         <Card className="card" style={{ width: '30rem' }}>
                             <Card.Img className="card-body-img" variant="top" src={eachProject.img}/>
                             <Card.Body className="card-body">
-                                <Card.Title><Link to={`/projects/${eachProject.id}`}>{eachProject.name}</Link></Card.Title>
+                                <Card.Title>{eachProject.name}</Card.Title>
                                 <Card.Text>
                                     <p><strong>About: </strong> <br />{eachProject.about}</p>
                                     <p><strong>Built with: </strong> <br />{eachProject.technologies_tools}</p>
@@ -76,27 +76,17 @@ export const projects = () => {
                                 </Card.Text>
                                 <div className="container-buttons-project">
                                 <button className="btn-projects">
-                                <a href={eachProject.web}>Check it out!</a>
+                                <a href={eachProject.web}><strong>Check it out!</strong></a>
                                 </button> 
 
                                 <button className="btn-projects-github">
-                                <a href={eachProject.gitHub}>GitHub</a>
+                                    <a href={eachProject.gitHub}><strong>GitHub</strong></a>
                                 </button> 
                                 </div>
                             </Card.Body>
-                        </Card>
+                        </Card>                      
                         
-                        
-                            {/* <p>
-                            {console.log(eachProject.id)}
-                                <Link to={`/projects/${eachProject.id}`}>{eachProject.name}</Link>
-                            </p> */}
-                            
-                            
-                        
-                           
-                        
-
+                    
                     </div> 
                 )
             })}

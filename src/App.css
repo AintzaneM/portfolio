@@ -58,7 +58,7 @@ li{
   color: #1b4332;
     
 }
-.lnk-contact a, .btn-projects a, .btn-projects-github a {
+.lnk-contact a, .btn-cv a, .btn-projects a, .btn-projects-github a {
   /* background: #1b4332; */
   border-radius: 12px;
   border-color: #74c69d ;
@@ -86,11 +86,53 @@ li{
   color: #74c69d;
 } */
 .presentation p {
-  color: white;
+  color: #1b4332;
 }
 
 .presentation h1, h3 {
-  color: #74c69d ;
+  color: #1b4332 ;
+}
+
+.text-work{
+  font-size: 28px;
+  color:#1b4332;
+}
+
+.container-logos{
+  max-width: 100%;
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-logos{
+  width: 50%;
+  height: 50%;
+}
+
+.container-images-home {
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.container-images-home img {
+  max-width: 4rem;
+  height: auto;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+
+.container-btn-cv{
+  display: flex;
+  justify-content: center;
+}
+
+.email-contact{
+  color:#1b4332;
+  font-size: 18px;
 }
 
 .btn-cv, .lnk-contact{
@@ -106,27 +148,23 @@ li{
   min-width: 10%;
 }
 
-.btn-cv a{
-  color:white;
-  text-decoration: none;
+button:hover , .btn-cv a:hover, .lnk-contact a:hover, .btn-contact a:hover, .btn-projects-github a:hover, .btn-projects a:hover{
+  background: #74c69d ;
+  color: #1b4332;
+  transition: 0.3s ease background;
 }
 
-button:hover , .lnk-contact a:hover, .btn-contact a:hover{
-  background: #74c69d ;
-  color: #fff;
-  transition: 0.3s ease background;
-  
-}
+
 
 .presentation {
-  background-color: #1b4332;
+  background-color: #74c69d ;
   border-radius: 20px;
-  box-shadow: 10px 10px 10px 5px #74c69d;
+  box-shadow: 10px 10px 10px 5px #1b4332;
   line-height: 25px;
   text-align: justify;
   margin:3rem;
-  margin-top: 8rem;
-  max-width:30%;
+  /* margin-top: 8rem; */
+  max-width:100%;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -155,6 +193,7 @@ button:hover , .lnk-contact a:hover, .btn-contact a:hover{
 .container-buttons-project {
   display: flex;
   flex-direction: column;
+  align-items: center;
   
 
 }
@@ -169,7 +208,7 @@ button:hover , .lnk-contact a:hover, .btn-contact a:hover{
   font-size: 14px;
   padding: 8px 16px;
   transition: 0.3s ease background;
-  min-width: 50%;
+  width: 50%;
 }
 
 .btn-contact {
