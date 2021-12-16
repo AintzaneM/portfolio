@@ -58,7 +58,7 @@ li{
   color: #1b4332;
     
 }
-.lnk-contact a, .btn-projects a {
+.lnk-contact a, .btn-projects a, .btn-projects-github a {
   /* background: #1b4332; */
   border-radius: 12px;
   border-color: #74c69d ;
@@ -111,7 +111,7 @@ li{
   text-decoration: none;
 }
 
-button:hover , .lnk-contact a:hover{
+button:hover , .lnk-contact a:hover, .btn-contact a:hover{
   background: #74c69d ;
   color: #fff;
   transition: 0.3s ease background;
@@ -133,7 +133,7 @@ button:hover , .lnk-contact a:hover{
   align-items: flex-start ;
 }
 
-/* PROJECTS */
+/* PROJECTS & CONTACTS */
 .container-projects, .container-contact {
   display: flex;
   flex-direction: column;
@@ -143,7 +143,6 @@ button:hover , .lnk-contact a:hover{
 
 .item-projects{
   margin: 3rem;
-  
 }
 
 .item-projects p{
@@ -153,7 +152,27 @@ button:hover , .lnk-contact a:hover{
   text-align: center;
 } 
 
-.btn-projects  {
+.container-buttons-project {
+  display: flex;
+  flex-direction: column;
+  
+
+}
+
+.btn-projects , .btn-projects-github {
+  background: #1b4332;
+  border-radius: 12px;
+  border-color: #74c69d ;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 14px;
+  padding: 8px 16px;
+  transition: 0.3s ease background;
+  min-width: 50%;
+}
+
+.btn-contact {
   background: #1b4332;
   border-radius: 12px;
   border-color: #74c69d ;
@@ -161,10 +180,15 @@ button:hover , .lnk-contact a:hover{
   display: inline-block;
   font-size: 14px;
   padding: 8px 16px;
+  text-transform: uppercase;
   transition: 0.3s ease background;
-  min-width: 50%;
+  min-width: 15%;
 }
 
+.btn-contact a{
+  color:white;
+  text-decoration: none;
+}
 .card-body{
   text-align: center;
   background-color: #FEFBF3; 

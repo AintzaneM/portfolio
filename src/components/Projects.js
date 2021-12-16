@@ -12,7 +12,8 @@ export const myProjects = [
         technologies_tools: "JavaScript, HTML, CSS, DOM Manipulation",
         type: "Game project",
         deployment: "GitHub",
-        web: "https://aintzanem.github.io/Who-invent-what/"
+        web: "https://aintzanem.github.io/Who-invent-what/",
+        gitHub: "https://github.com/AintzaneM/Who-invent-what",
     },
     {
         id: "1b",
@@ -23,7 +24,8 @@ export const myProjects = [
         technologies_tools: "React, JavaScript, HTML, CSS, Styled-Components, React Hooks",
         type: "Computer project",
         deployment: "Netlify",
-        web: "https://tetris-game-aintzanem.netlify.app/"
+        web: "https://tetris-game-aintzanem.netlify.app/",
+        gitHub: "https://github.com/AintzaneM/tetrisgame",
     },
     {
         id: "1c",
@@ -34,7 +36,8 @@ export const myProjects = [
         technologies_tools: "React, Express, Moongose, REST API, JavaScript, HTML, CSS, Authorization and Authentication",
         type: "MERN Stack application",
         deployment: "Netlify",
-        web: "https://about-skills.netlify.app/"
+        web: "https://about-skills.netlify.app/",
+        gitHub: "https://github.com/AintzaneM/hookup-server"
     },
     {
         id: "1d",
@@ -46,6 +49,7 @@ export const myProjects = [
         type: "Full Stack application",
         deployment: "Heroku",
         web:"https://surf-on.herokuapp.com/",
+        gitHub: "https://github.com/AintzaneM/surf-education"
     }
     
    
@@ -70,9 +74,15 @@ export const projects = () => {
                                     <p><strong>Built with: </strong> <br />{eachProject.technologies_tools}</p>
                                     <p><strong>Deployment: </strong> <br />{eachProject.deployment}</p>
                                 </Card.Text>
+                                <div className="container-buttons-project">
                                 <button className="btn-projects">
                                 <a href={eachProject.web}>Check it out!</a>
                                 </button> 
+
+                                <button className="btn-projects-github">
+                                <a href={eachProject.gitHub}>GitHub</a>
+                                </button> 
+                                </div>
                             </Card.Body>
                         </Card>
                         
