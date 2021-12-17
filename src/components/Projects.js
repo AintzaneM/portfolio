@@ -1,7 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Card";
 export const myProjects = [
     {
         id: "1a",
@@ -86,8 +84,6 @@ export const projects = () => {
                                 </div>
                             </Card.Body>
                         </Card>                      
-                        
-                    
                     </div> 
                 )
             })}

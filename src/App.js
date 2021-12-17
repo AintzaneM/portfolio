@@ -4,7 +4,6 @@ import './App.css';
 import Home from './components/Home';
 import {projects as Projects} from './components/Projects'
 import Navbar from './components/Navbar';
-import ProjectDetails from './components/ProjectDetails';
 import Contact from './components/Contact';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -15,23 +14,11 @@ class App extends React.Component {
     return (
       <div className="App">
         <Navbar/>
-        
-        
         <Switch>
-        
-
           <Route exact path ='/'>  
-            
             <Home/>
-            
-            
-            
           </Route>
-          
-          
-          
           <Route exact path='/projects' component={Projects}/>
-          <Route exact path='/projects/:id' component={ProjectDetails}/>
           <Route exact path='/contact' component={Contact}/>
         </Switch>
       </div>
