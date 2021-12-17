@@ -8,7 +8,7 @@ function Home() {
         <div className = "presentation">
             <div className="letter-home">
             <p className ="hi-there">HI THERE! 👋 , I'M</p>
-            <h1 className="name">Aintzane.</h1>
+            <h1 className="name"><strong>Aintzane.</strong></h1>
             <br/>
 
             <h3 className = "profession"><strong>FULL STACK DEVELOPER</strong></h3>
