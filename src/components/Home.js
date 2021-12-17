@@ -20,7 +20,7 @@ function Home() {
 
             <div className="container-btn-cv">
                 <button className = "btn-cv">
-                    <a className = "btn-link-cv" href = "https://drive.google.com/file/d/1bSM96eNm0aOk2cQ-7WIvcPg7-AZNYlVV/view?usp=sharing" download = "CVAintzane Morales"><strong>Check my CV</strong></a>
+                    <a className = "btn-link-cv" href = "https://drive.google.com/file/d/1MdZXL743-RBMMdidlCFOTr7R66gWFteI/view?usp=sharing" download = "CVAintzaneMorales"><strong>Check my CV</strong></a>
                 </button>
             </div>
         </div>
