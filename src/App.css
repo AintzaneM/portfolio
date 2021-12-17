@@ -194,9 +194,8 @@ button:hover , .btn-cv a:hover, .lnk-contact a:hover, .btn-contact a:hover, .btn
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-
 }
+
 
 .btn-projects , .btn-projects-github {
   background: #1b4332;
@@ -246,5 +245,9 @@ button:hover , .btn-cv a:hover, .lnk-contact a:hover, .btn-contact a:hover, .btn
 }
 
 
+.card-title{
+  color: #1b4332;
+  text-transform: uppercase;
+}
 
 

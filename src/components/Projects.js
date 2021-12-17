@@ -6,7 +6,7 @@ export const myProjects = [
     {
         id: "1a",
         name: "Who invent what?",
-        about:"",
+        about:"The project inspired by the game known as '3 in a row' or 'noughts and crosses'. The idea was born to give visibility to 👩‍🔬 women and their 💡 inventions created throughout history.",
         img:"./tic-tac1.png",
         year: 2021,
         technologies_tools: "JavaScript, HTML, CSS, DOM Manipulation",
@@ -18,7 +18,7 @@ export const myProjects = [
     {
         id: "1b",
         name: "Tetris",
-        about:"",
+        about:"The project based on the traditional game Tetris. Use the ⬆️ up arrow to change the shape of the item, and the ⬇️ down, ➡️ right, and ⬅️ left arrows to move the item.",
         img:"./tetris1.png",
         year: 2021,
         technologies_tools: "React, JavaScript, HTML, CSS, Styled-Components, React Hooks",
@@ -30,7 +30,7 @@ export const myProjects = [
     {
         id: "1c",
         name: "AboutSkills",
-        about:"",
+        about:"The project with the aim of 🔎 sharing professional experiences in different areas and 🤝 matching them with people looking for a new job or deciding which studies to choose.",
         img:"./aboutSkills1.png",
         year: 2021,
         technologies_tools: "React, Express, Moongose, REST API, JavaScript, HTML, CSS, Authorization and Authentication",
@@ -42,7 +42,7 @@ export const myProjects = [
     {
         id: "1d",
         name: "SurfOn",
-        about:"",
+        about:"The project addressed to 🏄‍♀️ surfer lovers where users can find and learn different surf tricks to 🧐 improve their technique.",
         img:"./surfOn1.png",
         year: 2021,
         technologies_tools: "Express, Moongose, JavaScript, HTML, CSS, Authorization and Authentication",
@@ -68,15 +68,16 @@ export const projects = () => {
                         <Card className="card" style={{ width: '30rem' }}>
                             <Card.Img className="card-body-img" variant="top" src={eachProject.img}/>
                             <Card.Body className="card-body">
-                                <Card.Title>{eachProject.name}</Card.Title>
-                                <Card.Text>
-                                    <p><strong>About: </strong> <br />{eachProject.about}</p>
-                                    <p><strong>Built with: </strong> <br />{eachProject.technologies_tools}</p>
-                                    <p><strong>Deployment: </strong> <br />{eachProject.deployment}</p>
-                                </Card.Text>
+                                <Card.Title className="card-title"><strong> {eachProject.name}</strong></Card.Title>
+                                    <br/>
+                                    <Card.Text>
+                                        <p><strong>About: </strong> <br />{eachProject.about}</p>
+                                        <p><strong>Built with: </strong> <br />{eachProject.technologies_tools}</p>
+                                        <p><strong>Deployment: </strong> <br />{eachProject.deployment}</p>
+                                    </Card.Text>
                                 <div className="container-buttons-project">
                                 <button className="btn-projects">
-                                <a href={eachProject.web}><strong>Check it out!</strong></a>
+                                    <a href={eachProject.web}><strong>Check it out!</strong></a>
                                 </button> 
 
                                 <button className="btn-projects-github">
