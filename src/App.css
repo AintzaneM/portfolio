@@ -1,144 +1,118 @@
 body {
   margin: 0;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: white;
   min-height: 100vh;
-  /* background-color: blue ; */
-
 }
-
 /*NAVBAR*/
-
-.navbar-container{
+.navbar-container {
   background-color: white;
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  
-  
-  
 }
-
-ul{
+ul {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  
 }
-
-li{
+li {
   margin-left: 3rem;
   margin-right: 3rem;
   list-style: none;
   display: flex;
   align-items: center;
 }
-
-.lnk-home a , .lnk-projects a {
-  /* background: #1b4332; */
+.lnk-home a,
+.lnk-projects a {
   border-radius: 12px;
-  border-color: #74c69d ;
+  border-color: #74c69d;
   cursor: pointer;
   display: inline-block;
   font-size: 14px;
   padding: 8px 16px;
-  transition: 0.3s ease background;
   min-width: 10%;
   text-decoration: none;
   color: #1b4332;
 }
-
-.lnk-home a:hover, .lnk-contact:hover , .lnk-projects :hover{
-  background-color: #74c69d ;
+.lnk-home a:hover,
+.lnk-contact:hover,
+.lnk-projects :hover {
+  background-color: #74c69d;
   transition: 0.3s ease background;
   color: #1b4332;
-    
 }
-.lnk-contact a, .btn-cv a, .btn-projects a, .btn-projects-github a {
-  /* background: #1b4332; */
+.lnk-contact a,
+.btn-cv a,
+.btn-projects a,
+.btn-projects-github a {
   border-radius: 12px;
-  border-color: #74c69d ;
+  border-color: #74c69d;
   cursor: pointer;
   display: inline-block;
   font-size: 14px;
   text-transform: uppercase;
   transition: 0.3s ease background;
   min-width: 10%;
-  color:white;
+  color: white;
   text-decoration: none;
   min-width: 20%;
   font-size: 14px;
 }
-
 /* HOME */
 .hi-there {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 .name {
   font-size: 40px;
 }
-
-/* .profession{
-  color: #74c69d;
-} */
-.presentation p {
+.presentation p,
+h1,
+h3 {
   color: #1b4332;
 }
-
-.presentation h1, h3 {
-  color: #1b4332 ;
-}
-
-.text-work{
+.text-work {
   font-size: 28px;
-  color:#1b4332;
+  color: #1b4332;
 }
-
-.container-logos{
+.container-logos {
   max-width: 100%;
   margin: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.img-logos{
+.img-logos {
   width: 50%;
   height: 50%;
 }
-
 .container-images-home {
   display: flex;
   justify-content: center;
- 
 }
-
 .container-images-home img {
   max-width: 4rem;
   height: auto;
   margin-right: 2rem;
   margin-left: 2rem;
 }
-
-
-.container-btn-cv{
+.container-btn-cv {
   display: flex;
   justify-content: center;
 }
-
-.email-contact{
-  color:#1b4332;
+.email-contact {
+  color: #1b4332;
   font-size: 18px;
 }
-
-.btn-cv, .lnk-contact{
+.btn-cv,
+.lnk-contact {
   background: #1b4332;
   border-radius: 12px;
-  border-color: #74c69d ;
+  border-color: #74c69d;
   cursor: pointer;
   display: inline-block;
   font-size: 14px;
@@ -147,60 +121,56 @@ li{
   transition: 0.3s ease background;
   min-width: 10%;
 }
-
-button:hover , .btn-cv a:hover, .lnk-contact a:hover, .btn-contact a:hover, .btn-projects-github a:hover, .btn-projects a:hover{
-  background: #74c69d ;
+button:hover,
+.btn-cv a:hover,
+.lnk-contact a:hover,
+.btn-contact a:hover,
+.btn-projects-github a:hover,
+.btn-projects a:hover {
+  background: #74c69d;
   color: #1b4332;
   transition: 0.3s ease background;
 }
-
-
-
 .presentation {
-  background-color: #74c69d ;
+  background-color: #74c69d;
   border-radius: 20px;
   box-shadow: 10px 10px 10px 5px #1b4332;
   line-height: 25px;
   text-align: justify;
-  margin:3rem;
-  /* margin-top: 8rem; */
-  max-width:100%;
+  margin: 3rem;
+  max-width: 100%;
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start ;
+  align-items: flex-start;
 }
-
 /* PROJECTS & CONTACTS */
-.container-projects, .container-contact {
+.container-projects,
+.container-contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-.item-projects{
+.item-projects {
   margin: 3rem;
 }
-
-.item-projects p{
+.item-projects p {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-} 
-
+}
 .container-buttons-project {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-
-.btn-projects , .btn-projects-github {
+.btn-projects,
+.btn-projects-github {
   background: #1b4332;
   border-radius: 12px;
-  border-color: #74c69d ;
+  border-color: #74c69d;
   cursor: pointer;
   display: inline-block;
   margin-bottom: 1rem;
@@ -209,11 +179,10 @@ button:hover , .btn-cv a:hover, .lnk-contact a:hover, .btn-contact a:hover, .btn
   transition: 0.3s ease background;
   width: 50%;
 }
-
 .btn-contact {
   background: #1b4332;
   border-radius: 12px;
-  border-color: #74c69d ;
+  border-color: #74c69d;
   cursor: pointer;
   display: inline-block;
   font-size: 14px;
@@ -222,32 +191,26 @@ button:hover , .btn-cv a:hover, .lnk-contact a:hover, .btn-contact a:hover, .btn
   transition: 0.3s ease background;
   min-width: 15%;
 }
-
-.btn-contact a{
-  color:white;
+.btn-contact a {
+  color: white;
   text-decoration: none;
 }
-.card-body{
+.card-body {
   text-align: center;
-  background-color: #FEFBF3; 
+  background-color: #fefbf3;
 }
-
 .card {
-  box-shadow: #74c69d  0px 5px 25px;
-  background-color: #FEFBF3 ;
+  box-shadow: #74c69d 0px 5px 25px;
+  background-color: #fefbf3;
   border-radius: 50px;
 }
-
-.title-projects, .title-contact{
-  margin:3rem;
+.title-projects,
+.title-contact {
+  margin: 3rem;
   font-size: 40px;
   color: #1b4332;
 }
-
-
-.card-title{
+.card-title {
   color: #1b4332;
   text-transform: uppercase;
 }
-
-
