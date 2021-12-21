@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 export const myProjects = [
     {
         id: "1a",
@@ -63,27 +64,35 @@ export const projects = () => {
                 return (
                     <div className="item-projects" key={eachProject.id}>
                         
-                        <Card className="card" style={{ width: '30rem' }}>
+                        {/* <Card className="card" style={{ width: '30rem' }}> */}
+                        <div className="card">
                             <Card.Img className="card-body-img" variant="top" src={eachProject.img}/>
-                            <Card.Body className="card-body">
-                                <Card.Title className="card-title"><strong> {eachProject.name}</strong></Card.Title>
+                            <div className="card-body">
+                                <div className="card-title"><strong> {eachProject.name}</strong></div>
                                     <br/>
-                                    <Card.Text>
-                                        <p><strong>About: </strong> <br />{eachProject.about}</p>
-                                        <p><strong>Built with: </strong> <br />{eachProject.technologies_tools}</p>
-                                        <p><strong>Deployment: </strong> <br />{eachProject.deployment}</p>
-                                    </Card.Text>
-                                <div className="container-buttons-project">
-                                <button className="btn-projects">
-                                    <a href={eachProject.web}><strong>Check it out!</strong></a>
-                                </button> 
+                                <div className="card-text">
+                                    <p><strong>About: </strong>{eachProject.about}</p>
+                                    <br/>
+                                    <p><strong>Built with: </strong>{eachProject.technologies_tools}</p>
+                                    <br />
+                                    <p><strong>Deployment: </strong>{eachProject.deployment}</p>
+                                
+                                    <br />
+                                    <div className="container-buttons-project">
 
-                                <button className="btn-projects-github">
-                                    <a href={eachProject.gitHub}><strong>GitHub</strong></a>
-                                </button> 
+                                        <button className="btn-projects">
+                                            <a href={eachProject.web}><strong>Check it out!</strong></a>
+                                        </button> 
+
+                                        <button className="btn-projects-github">
+                                            <a href={eachProject.gitHub}><strong>GitHub</strong></a>
+                                        </button> 
+                                    </div> 
+                               
                                 </div>
-                            </Card.Body>
-                        </Card>                      
+                               
+                            </div>
+                        </div>                      
                     </div> 
                 )
             })}
