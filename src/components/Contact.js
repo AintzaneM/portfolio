@@ -8,10 +8,15 @@ import React from "react";
 function Contact() {
     return (
         <div className="container-contact">
-            
+        
             <p className="title-contact"><strong>Contact</strong></p>
+            <div class="type-contact">
+                <p>If you find interesting my profile, please do not hesitate to contact me!</p>
+            </div>
+
             <div className="container-images-home">
                 <a href='https://www.linkedin.com/in/aintzanemorales/'>
+                    
                     <img src='./linkedin.png' alt=""/>
                 </a>
                 
@@ -23,9 +28,12 @@ function Contact() {
             <br/>
 
             <p className = "email-contact"><strong>aintzane.morales@gmail.com</strong></p>
-            <button className="btn-contact">
-                <a className="mailto" href="mailto:aintzane.morales@gmail.com"><strong>Send an email</strong></a>
-            </button> 
+            
+                <a className="mailto" href="mailto:aintzane.morales@gmail.com">
+                    <span>Send an email</span>
+                    <img src="/images/email.png"></img>
+                </a>
+            
             
         </div>
     )

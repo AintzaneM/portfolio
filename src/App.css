@@ -186,7 +186,7 @@ background: #fed330;
 
 /*PROJECTS PAGE*/
 
-.title-proj {
+.title-proj, .title-contact {
   margin-top: 5rem;
   font-size: 50px;
   color: black;
@@ -314,18 +314,70 @@ background: #fed330;
   color: black;
 }
 
-
-
-
-
-/* .title-projects,
-.title-contact {
-  margin: 3rem 3rem 0 3rem;
-  font-size: 5vw;
-  color: #1b4332;
+/*CONTACT*/
+.type-contact{
   display: flex;
   justify-content: center;
-} */
+}
+.type-contact p {
+  font-size: 20px;
+  color: black;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #fed330; 
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; 
+  letter-spacing: 1.8px;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 50% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #fed330; }
+}
+
+.container-images-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-images-home img{
+  width:50px;
+  margin: 20px 15px 20px 15px;
+  align-items: center;
+}
+
+.mailto{
+  font-size: 15px;
+  margin: 0px 22px 0px 0px;
+  padding: 0px 24px;
+  height: 56px;
+  border-radius: 4px;
+  display:flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  letter-spacing: 1.8px;
+  text-align: center;
+  text-transform: uppercase;
+  background: #fed330;
+}
+
+.mailto img {
+  width: 35px;
+}
+
+
+
 
 
 @media only screen and (max-width: 640px) {
@@ -405,7 +457,7 @@ background: #fed330;
     .goal{
       font-size:16px;
     }
-    .title-proj, .title-proj-items{
+    .title-proj, .title-proj-items, .title-contact{
       font-size: 40px;
     }
     .container-projects{
@@ -444,7 +496,7 @@ background: #fed330;
     .goal{
       font-size:12px;
     }
-    .title-proj, .title-proj-items{
+    .title-proj, .title-proj-items, .title-contact{
       font-size: 30px;
     }
     .container-projects{
