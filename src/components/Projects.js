@@ -6,7 +6,7 @@ export const myProjects = [
         id: "1a",
         name: "Who invent what?",
         about:"The project inspired by the game known as '3 in a row' or 'noughts and crosses'. The idea was born to give visibility to 👩‍🔬 women and their 💡 inventions created throughout history.",
-        img:"./tic-tac1.png",
+        img:"./tica-tac1.png",
         year: 2021,
         technologies_tools: "JavaScript, HTML, CSS, DOM Manipulation",
         type: "Game project",
@@ -57,41 +57,28 @@ export const myProjects = [
 export const projects = () => {
     return (
         <>
+            {/* <p className="title-proj"><strong>Projects</strong></p> */}
+            <p className="title-proj"><strong>PROJECTS <br/><span className="title-proj-items"></span></strong></p>
         
         <div className="container-projects">
-        <p className="title-projects"><strong>Projects</strong></p>
-            {myProjects.map((eachProject, index) => {
+           {myProjects.map((eachProject, index) => {
                 return (
                     <div className="item-projects" key={eachProject.id}>
-                        
-                        {/* <Card className="card" style={{ width: '30rem' }}> */}
                         <div className="card">
-                            <Card.Img className="card-body-img" variant="top" src={eachProject.img}/>
+                            <img src={eachProject.img}/>
                             <div className="card-body">
                                 <div className="card-title"><strong> {eachProject.name}</strong></div>
                                     <br/>
                                 <div className="card-text">
                                     <p><strong>About: </strong>{eachProject.about}</p>
-                                    <br/>
                                     <p><strong>Built with: </strong>{eachProject.technologies_tools}</p>
-                                    <br />
                                     <p><strong>Deployment: </strong>{eachProject.deployment}</p>
-                                
-                                    <br />
-                                    <div className="container-buttons-project">
-
-                                        <button className="btn-projects">
-                                            <a href={eachProject.web}><strong>Check it out!</strong></a>
-                                        </button> 
-
-                                        <button className="btn-projects-github">
-                                            <a href={eachProject.gitHub}><strong>GitHub</strong></a>
-                                        </button> 
-                                    </div> 
-                               
                                 </div>
-                               
                             </div>
+                            <div className="container-btns-project">
+                                <a href={eachProject.web}>Check out</a>
+                                <a href={eachProject.gitHub}>GitHub</a>
+                            </div> 
                         </div>                      
                     </div> 
                 )
