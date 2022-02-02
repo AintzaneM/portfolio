@@ -4,17 +4,9 @@ import {Link} from "react-router-dom";
 function NavBar () {
     return (
         <div className = "navbar-container">
-            <ul className = "navbar-items">
-                <li className="lnk-home">
-                    <Link to='/'><strong>Home</strong></Link>
-                </li>
-                <li className="lnk-projects">
-                    <Link to='/projects'><strong>Projects</strong></Link>
-                </li>
-                <li className="lnk-contact">
-                    <Link to='/contact'><strong>Contact</strong></Link>
-                </li>
-            </ul>
+                    <a href='/' className="lnk-home link text-underlined"><strong><span>Home</span></strong></a>
+                    <a href ='/projects' className="lnk-projects link text-underlined"><strong><span>Projects</span></strong></a>
+                    <a href ='/contact' className="lnk-contact link text-underlined"><strong><span>Contact</span></strong></a>
         </div>
     )
 }
