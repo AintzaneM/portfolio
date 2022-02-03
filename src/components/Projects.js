@@ -56,7 +56,7 @@ export const myProjects = [
         img:"./tica-tac1.png",
         year: 2021,
         technologies_tools: "JavaScript, HTML, CSS, DOM Manipulation",
-        type: "Game project",
+        type: "Front End web application",
         deployment: "GitHub",
         web: "https://aintzanem.github.io/Who-invent-what/",
         gitHub: "https://github.com/AintzaneM/Who-invent-what",
@@ -79,8 +79,11 @@ export const projects = () => {
                             <img src={eachProject.img}/>
                             <div className="card-body">
                                 <div className="card-title"><strong> {eachProject.name}</strong></div>
+                                
+
                                     <br/>
                                 <div className="card-text">
+                                    <p><strong>{eachProject.type}</strong></p>
                                     <p><strong>About: </strong>{eachProject.about}</p>
                                     <p><strong>Built with: </strong>{eachProject.technologies_tools}</p>
                                     <p><strong>Deployment: </strong>{eachProject.deployment}</p>
