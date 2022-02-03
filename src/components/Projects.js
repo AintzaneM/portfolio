@@ -10,8 +10,8 @@ export const myProjects = [
         technologies_tools: "JavaScript, HTML, CSS, Styled Components, NodeJS, ReactJS, Hooks, Redux, Firebase",
         type: "Full Stack web application",
         deployment: "Firebase",
-        web: "https://github.com/AintzaneM/films-clone",
-        gitHub: "https://films-clone.web.app/",
+        web: "https://films-clone.web.app/",
+        gitHub: "https://github.com/AintzaneM/films-clone",
     },
     {
         id: "1b",
