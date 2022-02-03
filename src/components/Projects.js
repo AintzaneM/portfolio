@@ -1,18 +1,17 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
  <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 export const myProjects = [
     {
         id: "1a",
-        name: "Who invent what?",
-        about:"The project inspired by the game known as '3 in a row' or 'noughts and crosses'. The idea was born to give visibility to 👩‍🔬 women and their 💡 inventions created throughout history.",
-        img:"./tica-tac1.png",
+        name: "Disney+ Web Clone",
+        about:"Inspired by Disney+ web application.",
+        img:"/images/disney+.png",
         year: 2021,
-        technologies_tools: "JavaScript, HTML, CSS, DOM Manipulation",
-        type: "Game project",
-        deployment: "GitHub",
-        web: "https://aintzanem.github.io/Who-invent-what/",
-        gitHub: "https://github.com/AintzaneM/Who-invent-what",
+        technologies_tools: "JavaScript, HTML, CSS, Styled Components, NodeJS, ReactJS, Hooks, Redux, Firebase",
+        type: "Full Stack web application",
+        deployment: "Firebase",
+        web: "https://github.com/AintzaneM/films-clone",
+        gitHub: "https://films-clone.web.app/",
     },
     {
         id: "1b",
@@ -21,7 +20,7 @@ export const myProjects = [
         img:"./tetris1.png",
         year: 2021,
         technologies_tools: "React, JavaScript, HTML, CSS, Styled-Components, React Hooks",
-        type: "Computer project",
+        type: "Front End web application",
         deployment: "Netlify",
         web: "https://tetris-game-aintzanem.netlify.app/",
         gitHub: "https://github.com/AintzaneM/tetrisgame",
@@ -32,23 +31,35 @@ export const myProjects = [
         about:"The project with the aim of 🔎 sharing professional experiences in different areas and 🤝 matching them with people looking for a new job or deciding which studies to choose.",
         img:"./aboutSkills1.png",
         year: 2021,
-        technologies_tools: "React, Express, Moongose, REST API, JavaScript, HTML, CSS, Authorization and Authentication",
-        type: "MERN Stack application",
+        technologies_tools: "ReactJS, Express, NodeJS, MongoDB, Moongose, REST API, JavaScript, HTML, CSS, Authorization and Authentication",
+        type: "Full Stack web application",
         deployment: "Netlify",
         web: "https://about-skills.netlify.app/",
-        gitHub: "https://github.com/AintzaneM/hookup-server"
+        gitHub: "https://github.com/AintzaneM/hookup-server",
     },
     {
         id: "1d",
         name: "SurfOn",
-        about:"The project addressed to 🏄‍♀️ surfer lovers where users can find and learn different surf tricks to 🧐 improve their technique.",
+        about:"The project addressed to 🏄‍♀️ surf lovers where users can find and learn different surf tricks to 🧐 improve their technique.",
         img:"./surfOn1.png",
         year: 2021,
-        technologies_tools: "Express, Moongose, JavaScript, HTML, CSS, Authorization and Authentication",
-        type: "Full Stack application",
+        technologies_tools: "Express, NodeJS, MongoDB, Moongose, JavaScript, HTML, CSS, Authorization and Authentication",
+        type: "Full Stack web application",
         deployment: "Heroku",
         web:"https://surf-on.herokuapp.com/",
         gitHub: "https://github.com/AintzaneM/surf-education"
+    },
+    {
+        id: "1e",
+        name: "Who invent what?",
+        about:"Inspired by the game known as '3 in a row' or 'noughts and crosses' with the objective of giving visibility to 👩‍🔬 women and their 💡 inventions created throughout history.",
+        img:"./tica-tac1.png",
+        year: 2021,
+        technologies_tools: "JavaScript, HTML, CSS, DOM Manipulation",
+        type: "Game project",
+        deployment: "GitHub",
+        web: "https://aintzanem.github.io/Who-invent-what/",
+        gitHub: "https://github.com/AintzaneM/Who-invent-what",
     }
     
    
