@@ -58,7 +58,7 @@ export const projects = () => {
     return (
         <>
             {/* <p className="title-proj"><strong>Projects</strong></p> */}
-            <p className="title-proj"><strong>PROJECTS <br/><span className="title-proj-items"></span></strong></p>
+        <p className="title-proj"><strong>Projects <br/><span className="title-proj-items"></span></strong></p>
         
         <div className="container-projects">
            {myProjects.map((eachProject, index) => {
