@@ -1,3 +1,4 @@
+
 /*NAVBAR*/
 
 .navbar-container {
@@ -289,6 +290,7 @@ hr {
 
 /*CONTACT*/
 
+
 .contact-page {
   display: flex;
   flex-direction: column;
@@ -312,9 +314,9 @@ hr {
   font-size: 40px;
   width: auto;
   color: black;
-  overflow: hidden; 
+  overflow: hidden;
   border-right: 0.15em solid #fed330;
-  white-space: nowrap; 
+  white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 1.8px;
   animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
@@ -383,6 +385,9 @@ hr {
   color: black;
   border: 2px solid #fed330;
 }
+
+
+
 
 @media only screen and (min-width: 855px) {
   .type-contact p {
@@ -532,4 +537,8 @@ hr {
     text-align: center;
     align-items: center;
   }
+
+ 
+
+
 }
