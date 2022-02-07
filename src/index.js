@@ -4,11 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter as Router} from "react-router-dom"
+import SupportAdmin from "./components/SupportAdmin"
+
+const path = window.location.pathname
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <App />
+    { path.indexOf('/support') === -1 ? <App /> : <SupportAdmin /> }
     </Router>
   </React.StrictMode>,
   
