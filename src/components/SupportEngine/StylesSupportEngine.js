@@ -25,7 +25,7 @@ export const styles = {
         padding: '12px 12px 12px 16px',
         borderRadius: '24px', 
         // Color
-        backgroundColor: '#f9f0ff',
+        backgroundColor: 'white',
         color: 'black',
     },
     supportWindow: {

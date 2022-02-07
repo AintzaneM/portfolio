@@ -15,7 +15,7 @@ const Avatar = props => {
                 ...styles.avatarHello,
                 ...{opacity:  hovered ? "1":"0"}
             }}>
-                Hey it's Aintzane👋
+                Hi! It's Aintzane👋
             </div>
             
             
