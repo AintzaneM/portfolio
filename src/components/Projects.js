@@ -53,7 +53,7 @@ export const myProjects = [
         id: "1e",
         name: "Who invent what?",
         about:"Inspired by the game known as '3 in a row' or 'noughts and crosses' with the objective of giving visibility to 👩‍🔬 women and their 💡 inventions created throughout history.",
-        img:"./images/tica-taca1.png",
+        img:"./tica-taca1.png",
         year: 2021,
         technologies_tools: "JavaScript, HTML, CSS, DOM Manipulation",
         type: "Front End web application",
