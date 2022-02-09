@@ -70,7 +70,7 @@ const EmailForm = props => {
                 }
             }}
         >
-            <div style={{ height: "0px" }}>
+            <div className="stripe" style={{ height: "0px" }}>
                 <div style={styles.stripe}></div>
 
             </div>
@@ -99,32 +99,37 @@ const EmailForm = props => {
 
                     }}
                 />
-                <div style={{ position: "absolute", height: "100%", width: "100%", textAlign: "center"}}>
-                    <Avatar
+                <div className="support-window"style={{ position: "absolute", height: "100%", width: "100%", textAlign: "center"}}>
+                    <div className="avatar">
+                        <Avatar 
                         style = {{
                             position: "relative",
-                            left:"calc(50% - 44px)",
-                            top: "10%",
+                            // left:"calc(50% - 44px)",
+                            top: "50%",
                         }}
-                    />
-                    <div style= {styles.topText}>
-                        Welcome to my <br/> support page
+                         />
                     </div>
-
-                    <form
+                    <div className="top-text"style= {styles.topText}>
+                        Welcome to my support page
+                    </div>
+                   
+                    <form className="email-form-window"
                         onSubmit={e => handleSubmit(e)}
-                        style={{position: "relative", width: "100%", top: "20%"}}
+                        style={{position: "relative", width: "100%"}}
                     >
-                        <input
+                        <input className="email-input"
                         style={styles.emailInput}
                         onChange={e => setEmail(e.target.value)}
                         placeholder="Your email"
                         />
                     </form>
 
-                    <div style={styles.bottomText}>
-                        Let's talk! <br/> Enter your email <br/> to get started
+                    <div className="bottom-text"style={styles.bottomText}>
+                        Let's talk in realtime! <br/>Enter your email to get started
                     </div>
+
+
+                   
 
                 </div>
         </div>

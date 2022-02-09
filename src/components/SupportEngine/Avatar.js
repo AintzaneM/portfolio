@@ -10,7 +10,7 @@ const Avatar = props => {
     return (
         <div style ={props.style}>
             <div
-            className="transition-3"
+            className="transition-3 avatar-hello"
             style={{
                 ...styles.avatarHello,
                 ...{opacity:  hovered ? "1":"0"}
@@ -20,7 +20,7 @@ const Avatar = props => {
             
             
             <div 
-            className="transition-3"
+            className="transition-3 chat-with-me"
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
             onClick={()=> props.onClick && props.onClick()}

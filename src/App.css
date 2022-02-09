@@ -136,7 +136,14 @@ hr {
 .goal {
   font-size: 20px;
 }
-.container-btn-cv {
+
+.container-btn-cv a{
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  background: #fed330;
   font-size: 15px;
   margin: 0px 22px 0px 0px;
   padding: 0px 24px;
@@ -148,24 +155,19 @@ hr {
   justify-content: center;
   letter-spacing: 1.8px;
   text-align: center;
-  text-transform: uppercase;
-  background: #fed330;
-}
 
-.container-btn-cv:hover {
-  background: whitesmoke;
-  border: 2px solid #fed330;
 }
 .container-btn-cv img {
   width: 35px;
 }
-.container-btn-cv a {
-  text-decoration: none;
-  color: black;
-}
+
+
 .container-btn-cv a:hover {
+  background: whitesmoke;
+  border: 2px solid #fed330;
   color: black;
 }
+
 
 /*PROJECTS PAGE*/
 
@@ -410,6 +412,89 @@ hr {
   .type-contact p {
     font-size: 30px;
   }
+  .bottom-text{
+    font-size:20px;
+    margin-top: 5px;
+  }
+
+  .top-text {
+    font-size: 24px;
+  }
+
+ 
+    
+  /*CHAT*/
+
+  .bottom-text{
+    font-size: 24px;
+    width: 100%;
+    position: absolute;
+    bottom: -15%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .top-text {
+    font-size: 24px;
+    position: relative;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .avatar{
+    height: 50%; 
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+  }
+
+  .email-input {
+    /* width: 30%; */
+    background: white;
+    padding: 4px;
+    font-size: 16px;  
+    
+  }
+
+  .email-form-window{
+    /* left: 35%; */
+    position: relative;
+    top: 25%;
+    width: 66%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .support-window {
+    height: 420px;
+    position:fixed;
+    /* left: 25px; */
+    bottom: 100px;
+    /* right:20px; */
+    width: 420px;
+  }
+
+  .chat-with-me {
+    width: 84px;
+    height: 84px;
+    background-size: 84px;
+  }
+  .avatar-hello{
+    left: calc(-100% - 44px - 28px); 
+    padding: 12px 12px 12px 16px;
+    top: calc(50% - 24px);
+  }
+
+
+
+
+
+
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .hi-there,
@@ -421,6 +506,10 @@ hr {
     padding: 0px 12px;
     font-size: 12px;
     margin: 0px 10px 0px 0px;
+    
+  }
+  .container-btn-cv a {
+    width: 100%;
   }
   .container-btn-cv img {
     width: 25px;
@@ -472,6 +561,78 @@ hr {
     text-align: center;
     align-items: center;
   }
+
+    
+  /*CHAT*/
+
+  .bottom-text{
+    font-size: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: -10%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .top-text {
+    font-size: 20px;
+    position: relative;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .avatar{
+    height: 50%; 
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+  }
+
+  .email-input {
+    /* width: 30%; */
+    background: white;
+    padding: 4px;
+    font-size: 16px;  
+    
+  }
+
+  .email-form-window{
+    /* left: 35%; */
+    position: relative;
+    top: 25%;
+    width: 66%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .support-window {
+    height: 420px;
+    position:fixed;
+    /* left: 25px; */
+    bottom: 100px;
+    /* right:20px; */
+    width: 420px;
+  }
+
+  .chat-with-me {
+    width: 84px;
+    height: 84px;
+  }
+  .avatar-hello{
+    left: calc(-100% - 44px - 28px); 
+    padding: 12px 12px 12px 16px;
+    top: calc(50% - 24px);
+  }
+
+
+
+
+ 
 }
 
 @media only screen and (max-width: 479px) {
@@ -483,12 +644,19 @@ hr {
   .drivers-items {
     font-size: 20px;
   }
-  .container-btn-cv {
+  .container-btn-cv a {
     height: 25px;
     padding: 0px 24px;
     font-size: 10px;
     margin: 0px 10px 0px 0px;
   }
+
+  /* .container-btn-cv a:hover {
+    background: whitesmoke;
+    border: 2px solid #fed330;
+    color: black;
+  } */
+
   .container-btn-cv img {
     width: 25px;
   }
@@ -538,7 +706,69 @@ hr {
     align-items: center;
   }
 
+  .bottom-text{
+    font-size:12px;
+    position: absolute;
+    bottom: -20%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .top-text {
+    font-size: 12px;
+    position: relative;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .avatar{
+    height: 50%; 
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+  }
+
+  .email-input {
+    width: 30%;
+    background: white;
+    padding: 4px;
+    font-size: 10px;  
+    display: flex;
+    justify-content: center;
+  }
+
+  .email-form-window{
+    left: 35%;
+    position: relative;
+    top: 25%;
+  }
+
+  .support-window {
+    height: 220px;
+    position:fixed;
+    /* left: 25px; */
+    bottom: 72px;
+    /* right:20px; */
+    width: 420px;
+  }
+
+  .chat-with-me {
+    width: 50px;
+    height: 50px;
+    background-size: 50px;
+  }
+  .avatar-hello{
+    left: calc(-100% - 44px - 50px); 
+    padding: 6px 6px 6px 8px;
+    top: calc(50% - 5px);
+  }
+
+
+
  
-
-
 }

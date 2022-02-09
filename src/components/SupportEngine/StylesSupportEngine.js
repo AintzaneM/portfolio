@@ -5,24 +5,24 @@ export const styles = {
         // Border
         borderRadius: '50%',
         // Background 
-        backgroundImage: `url(/Aintzane.jpeg)`, 
+        backgroundImage: `url(/Aintzane.jpeg)`,  
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
-        backgroundSize: '84px',
+        // backgroundSize: '84px',
         // Size
-        width: '84px',
-        height: '84px',
+        // width: '84px',
+        // height: '84px',
     },
     avatarHello: { 
         // Position
         position: 'absolute', 
-        left: 'calc(-100% - 44px - 28px)', 
-        top: 'calc(50% - 24px)', 
+        // left: 'calc(-100% - 44px - 28px)', 
+        // top: 'calc(50% - 24px)', 
         // Layering
         zIndex: '10000',
         boxShadow: '0px 0px 16px 6px rgba(0, 0, 0, 0.33)',
         // Border
-        padding: '12px 12px 12px 16px',
+        // padding: '12px 12px 12px 16px',
         borderRadius: '24px', 
         // Color
         backgroundColor: 'white',
@@ -31,11 +31,11 @@ export const styles = {
     supportWindow: {
         // Position
         position: 'fixed',
-        bottom: '116px',
+        // bottom: '116px',
         right: '24px',
         // Size
-        width: '300px',
-        height: '430px',
+        // width: '420px',
+        // height: '530px',
         maxWidth: 'calc(100% - 48px)',
         maxHeight: 'calc(100% - 48px)',
         backgroundColor: 'white',
@@ -45,11 +45,7 @@ export const styles = {
         overflow: 'hidden',
         // Shadow
         boxShadow: '0px 0px 16px 6px rgba(0, 0, 0, 0.33)',
-
-        
     },
-
-    
     emailFormWindow: { 
         width: '100%',  
         overflow: 'hidden',
@@ -66,27 +62,27 @@ export const styles = {
         transform: 'skewY(-12deg)',
     },
     topText: { 
-        position: 'relative',
+        // position: 'relative',
         width: '100%', 
-        top: '15%', 
+        // top: '80%', 
         color: 'black', 
-        fontSize: '24px', 
+        // fontSize: '24px', 
         fontWeight: '600',
     },
     emailInput: { 
-        width: '66%',
+        // width: '66%',
         textAlign: 'center',
         outline: 'none',
-        padding: '12px',
+        // padding: '12px',
         borderRadius: '12px',
         border: '2px solid #fed330',
     },
     bottomText: { 
-        position: 'absolute', 
+        // position: 'absolute', 
         width: '100%', 
-        top: '70%', 
+        // top: '60%', 
         color: 'black', 
-        fontSize: '20px', 
+        // fontSize: '24px', 
         fontWeight: '600' 
     },
     loadingDiv: { 
@@ -105,6 +101,6 @@ export const styles = {
     },
     chatEngineWindow: {
         width: '100%',  
-        backgroundColor: '#fff',
+        backgroundColor: 'black',
     }
 }
