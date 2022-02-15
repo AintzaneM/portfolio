@@ -8,7 +8,7 @@ export const myProjects = [
         about:"Track your expenses with this web app.",
         img:"/expenser.jpg",
         year: 2021,
-        technologies_tools: "JavaScript, HTML, CSS, Hooks, NodeJS, ReactJS, Hooks, Redux, Firebase",
+        technologies_tools: "JavaScript, CSS, Hooks, NodeJS, ReactJS",
         type: "Front-End web application",
         deployment: "Netlify",
         web: "https://620bdf87ae52d736ea346fa9--goofy-yonath-1d4331.netlify.app/",
